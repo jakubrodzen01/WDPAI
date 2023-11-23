@@ -1,0 +1,173 @@
+body {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.base_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background: #0E1111;
+}
+
+nav {
+    width: 20vw;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+nav > img {
+    width: 40%;
+    margin: 1.5em auto;
+}
+
+main {
+    width: 80vw;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 2em;
+}
+
+.button {
+    border: 1px solid white;
+    border-radius: 1em;
+
+    margin-left: 1em;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: white;
+    padding: 0.2em;
+    width: 60%;
+}
+
+ul {
+    list-style-type: none;
+    color: white;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    width: calc(80%);
+    position: relative;
+}
+
+li {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+nav > ul > li:last-child {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.exercise_button {
+    border-radius: 1em;
+    background: #FFF;
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+    margin-left: 1em;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: black;
+    padding: 0.2em;
+    width: 50%;
+}
+
+.add_button {
+    border-radius: 1em;
+    background: #AEAEAE;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+    margin-left: 1em;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: black;
+    padding: 0.2em;
+    width: 50%;
+}
+
+label {
+    display: inline-block;
+    line-height: 2em;
+}
+
+.exercise_day {
+    border-radius: 1em;
+    border: 1px solid #FFF;
+
+    background: #067352;
+
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+
+    margin-left: 1em;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: white;
+    padding: 0.2em;
+    width: 50%;
+}
+
+header {
+    display: none;
+}
+
+@media only screen and (max-device-width: 992px) {
+    nav {
+        display: none;
+    }
+
+    body {
+        font-size: 2.5em;
+    }
+
+    .base_container {
+        flex-direction: column;
+    }
+
+    header {
+        width: 80%;
+        display: flex;
+        margin: 1em;
+        padding: 1em;
+        justify-content: flex-end;
+    }
+    
+    header > img {
+        width: 1.5em;
+        margin-left: 1em;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    label {
+        margin-bottom: 1.3em;
+    }
+
+    ul {
+        width: 100%;
+    }
+}
