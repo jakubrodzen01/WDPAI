@@ -12,8 +12,16 @@
             <img src="public/img/logo_green.svg">
         </div>
 
-        <form>
-            <input name="username" type="text" placeholder="username">
+        <form class="login_container", action="login" method="POST">
+            <div class="messages" style="color: white; text-align: center; margin-bottom: 1em;">
+                <?php if(isset($messages)) {
+                    foreach ($messages as $message){
+                        echo $message;
+                    }
+                }
+                ?>
+            </div>
+            <input name="email" type="text" placeholder="email">
             <input name="password" type="password" placeholder="password">
             <button type="submit">CONTINUE</button>
         </form>

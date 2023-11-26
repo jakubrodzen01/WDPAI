@@ -1,4 +1,4 @@
-/* login.html */
+/* login.php */
 body {
     position: fixed;
     top: 0;
@@ -58,7 +58,7 @@ button {
     line-height: 2.5em;
 }
 
-/* main.html */
+/* main.php */
 .base_container {
     display: flex;
     align-items: center;
