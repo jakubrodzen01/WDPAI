@@ -1,51 +1,68 @@
+<?php
+require_once 'session.php';
+?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/main_style.css" />
-    <title>main</title>
+    <script src="public/js/main.js"></script>
+    <title>Main</title>
 </head>
 
-
 <body>
-    <div class="base_container">
-        <header>
-            <img src="public/img/calendar.svg">
-            <img src="public/img/more.svg">
-        </header>
+<div class="base_container">
+    <header>
+        <img src="public/img/calendar.svg">
+        <img src="public/img/more.svg">
+    </header>
 
-        <nav>
-                <img src="public/img/logo_green.svg">
-                
-                <ul>
-                    <li>
-                            <a href="#" class="button">month/day</a>
-                    </li>
+    <nav>
+        <img src="public/img/logo_green.svg">
+        <ul>
+            <li>
+                <form method="POST" action="postPlan">
+                    <input type="date" id="datepicker" name="selectedDate" value="<?php echo date('Y-m-d'); ?>" onchange="updateExerciseDay()">
+                    <button type="submit">Show plan</button>
+                </form>
+            </li>
+            <li>
+                <a href="profile" class="button">Profile</a>
+            </li>
+        </ul>
+    </nav>
 
-                    <li>
-                            <a href="#" class="button">calendar</a>
-                    </li>
-                    <li>
-                        <a href="#" class="button">profile</a>
-                    </li>
-                </ul>
-        </nav>
+    <main>
+        <label style="color: #FFFFFF">
+            <?php
+            if ($_SESSION['selected_date'] !== null) {
+                echo $_SESSION['selected_date'];
+            } else {
+                echo 'Select date';
+            }
+            ?>
+        </label>
 
-        <main>
-            <ul>
-                <li>
-                    <label class="exercise_day">exercise_day</label>
-                </li>
-                <li>
-                    <a href="#" class="exercise_button">exercise_name, sets, reps</a>
-                </li>
+        <section class="exerciseList">
+            <?php $exerciseList = $_SESSION['exercises']; ?>
+            <h1 style="color: #FFFFFF"><?php echo $_SESSION['plan_name']?></h1>
+            <?php foreach ($exerciseList as $exercise): ?>
 
-                <li>
-                    <a href="#" class="add_button">ADD</a>
-                </li>
-            </ul>
-        </main>
-    </div>    
+                <div style="color: #FFFFFF">
+                    <h2><?=$exercise->getExerciseName(); ?></h2>
+                    <p>Sets: <?=$exercise->getSets(); ?></p>
+                    <p>Reps: <?=$exercise->getReps(); ?></p>
+                    <p>Weight: <?=$exercise->getWeight(); ?></p>
+                </div>
+
+            <?php endforeach; ?>
+            <form id="add_button" method="POST" action="addExercise">
+                <input type="submit" value="Add exercise">
+            </form>
+        </section>
+    </main>
+</div>
 </body>
 
 </html>

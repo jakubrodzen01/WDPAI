@@ -57,12 +57,6 @@ button {
     line-height: 2.5em;
 }
 
-.messages {
-    color: white;
-    text-align: center;
-    margin-bottom: 1em;
-}
-
 @media only screen and (max-device-width: 992px) {
     .container {
         flex-direction: column;
@@ -73,7 +67,7 @@ button {
     }
 
     body {
-        font-size: 48px;
+        font-size: 1em;
     }
 
     .logo>img {

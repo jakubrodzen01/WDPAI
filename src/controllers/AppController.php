@@ -19,6 +19,16 @@ class AppController {
         return $this->request === 'POST';
     }
 
+    protected function getPost(string $key)
+    {
+        return isset($_POST[$key]) ? $_POST[$key] : null;
+    }
+
+    protected function getSession(string $key)
+    {
+        return isset($_SESSION[$key]) ? $_SESSION[$key] : null;
+    }
+
     protected function render(string $template = null, array $variables = [])
     {
         $templatePath = 'public/views/'. $template.'.php';

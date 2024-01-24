@@ -9,5 +9,10 @@ Router::get('', 'DefaultController');
 Router::get('index','DefaultController');
 Router::get('main', 'DefaultController');
 Router::post('login', 'SecurityController');
+Router::get('logout', 'SecurityController');
+Router::get('profile', 'DefaultController');
+Router::get('register', 'SecurityController');
+Router::post('postPlan', 'PlanController');
+Router::post('addExercise', 'PlanController');
 
 Router::run($path);
