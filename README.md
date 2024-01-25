@@ -81,18 +81,9 @@ Provides a web-based interface for PostgreSQL administration.
 
 Adjust the details according to your application's specific functionalities and database structure.
 
-Admin Features
-User Management
-As an admin, you have additional privileges for managing users within the GYM Planner application. These features include:
-
-Delete User
-Admins can seamlessly remove users from the system, providing an efficient way to handle user accounts that need to be deactivated or removed entirely.
-
-To delete a user:
-
 ###Admin Features
 
-##User Management
+## User Management
 
 As an admin, you have additional privileges for managing users within the GYM Planner application.
 Admins can seamlessly remove users from the system, providing an efficient way to handle user accounts that need to be deactivated or removed entirely.
@@ -107,9 +98,17 @@ To delete a user:
 6. **Confirm the deletion through a prompt or dedicated button.**
 Admins play a crucial role in maintaining a secure and well-organized user database. The ability to delete users ensures that only valid and authorized individuals have access to the GYM Planner application.
 
-###User Features
+### User Features
 
-##Personalized Workout Plans
+## Personalized Workout Plans
 ![](./screenshots/main.png)
 As a user of the GYM Planner application, you can enjoy a range of features that empower you to create your personalized workout plan. The GYM Planner application aims to provide a user-friendly experience, making it easier for you to achieve your fitness objectives. Customize your workout plans, track your progress, and stay motivated on your fitness journey.
 
+## Getting Started
+To begin using the GYM Planner application, follow these simple steps:
+1. Clone the repository (git clone https://github.com/jakubrodzen01/WDPAI)
+2. Navigate to the Project Directory (cd WDPAI)
+3. Run Docker Compose (docker-compose up)
+
+Open your web browser and navigate to the application using the provided address (http://localhost:8080).
+Now you're all set to explore the GYM Planner and make the most of its features. Enjoy creating and managing your personalized workout plans!
