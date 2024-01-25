@@ -80,3 +80,36 @@ Provides a web-based interface for PostgreSQL administration.
    - After the logout action, the user is redirected to the login page.
 
 Adjust the details according to your application's specific functionalities and database structure.
+
+Admin Features
+User Management
+As an admin, you have additional privileges for managing users within the GYM Planner application. These features include:
+
+Delete User
+Admins can seamlessly remove users from the system, providing an efficient way to handle user accounts that need to be deactivated or removed entirely.
+
+To delete a user:
+
+###Admin Features
+
+##User Management
+
+As an admin, you have additional privileges for managing users within the GYM Planner application.
+Admins can seamlessly remove users from the system, providing an efficient way to handle user accounts that need to be deactivated or removed entirely.
+
+To delete a user:
+
+1. **Access the Admin Panel section.**
+   ![](./screenshots/admin_profile.png)
+3. **View the list of users displayed, including their email, name, surname, and gender.**
+   ![](./screenshots/admin_panel.png)
+5. **Click on the user you wish to delete.**
+6. **Confirm the deletion through a prompt or dedicated button.**
+Admins play a crucial role in maintaining a secure and well-organized user database. The ability to delete users ensures that only valid and authorized individuals have access to the GYM Planner application.
+
+###User Features
+
+##Personalized Workout Plans
+![](./screenshots/main.png)
+As a user of the GYM Planner application, you can enjoy a range of features that empower you to create your personalized workout plan. The GYM Planner application aims to provide a user-friendly experience, making it easier for you to achieve your fitness objectives. Customize your workout plans, track your progress, and stay motivated on your fitness journey.
+
