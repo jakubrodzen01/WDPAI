@@ -61,6 +61,7 @@ class PlanController extends AppController
         $exerciseRepository = new ExerciseRepository();
 
         $exercise = new Exercise($_SESSION['plan_id'], $exerciseName, $sets, $reps, $weight);
+
         try {
             $exerciseRepository->addExercise($exercise);
 

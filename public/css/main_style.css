@@ -15,7 +15,7 @@ body {
     justify-content: flex-start;
     height: 100vh;
     background: #0E1111;
-    overflow: scroll;
+    overflow: auto;
 }
 
 nav {
@@ -85,6 +85,45 @@ nav > ul > li:last-child {
 
 header {
     display: none;
+}
+
+.exerciseList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.plan-name {
+    background-color: #067352;
+}
+
+.exerciseDetails {
+    background-color: grey;
+    border-radius: 1em;
+    border: 1px solid #FFF;
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    
+    margin-bottom: 1em;
+    text-align: center;
+    color: black;
+    width: 40%;
+}
+
+.addButton {
+    background-color: #067352;
+    padding: 1em 2em;
+    border-radius: 1em;
+    border: 1px solid #FFF;
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+}
+label {
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 @media only screen and (max-device-width: 992px) {

@@ -7,26 +7,24 @@ require_once 'session.php';
 
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/profile_style.css" />
+    <script src="public/js/profile.js" defer></script>
     <title>Profile</title>
 </head>
 
 <body>
-    <nav>
-        <div class="avatar">
-            <img src="public/img/avatar.svg">
-        </div>
+    <div class="avatar">
+        <img src="public/img/avatar.svg">
+    </div>
 
-        <ul>
-                    <li>
-                        <label><?php echo $_SESSION['user_name'].' '.$_SESSION['user_surname']; ?></label>
-                    </li>
-                    <li>
-                        <form class="logout_form" action="logout" method="GET">
-                            <button class="logout_button" type="submit">LOGOUT</button>
-                        </form>
-                    </li>
-        </ul>
-    </nav>
+    <p>
+        <?php echo $_SESSION['user_name'] . ' ' . $_SESSION['user_surname']; ?>
+    </p>
+    <?php if ($_SESSION['user_email'] === 'admin'): ?>
+        <button class="adminPanel" onclick="goToAdminPanel()">ADMIN PANEL</button>
+    <?php endif; ?>
+    <form class="logout_form" action="logout" method="GET">
+        <button class="logout_button" type="submit">LOGOUT</button>
+    </form>
 </body>
 
 </html>

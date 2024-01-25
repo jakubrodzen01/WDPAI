@@ -2,13 +2,14 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/register_style.css" />
+    <script type="text/javascript" src="./public/js/register.js" defer></script>
     <title>Register</title>
 </head>
 
 <body>
     <div class="container">
         <div class="logo">
-            <img src="public/img/logo_green.svg">
+            <img src="public/img/logo_green.svg" action onclick="goToLogin()">
         </div>
 
         <form class="register_container" action="register" method="POST">
@@ -33,6 +34,7 @@
             </div>
             <input name="email" type="text" placeholder="email" required>
             <input name="password" type="password" placeholder="password" required>
+            <input name="confirmPassword" type="password" placeholder="confirm password" required>
             <button type="submit">SIGN UP</button>
         </form>
     </div>

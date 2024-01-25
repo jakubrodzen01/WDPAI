@@ -14,5 +14,7 @@ Router::get('profile', 'DefaultController');
 Router::get('register', 'SecurityController');
 Router::post('postPlan', 'PlanController');
 Router::post('addExercise', 'PlanController');
+Router::get('adminPanel', 'UsersController');
+Router::get('deleteUser', 'UsersController');
 
 Router::run($path);

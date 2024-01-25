@@ -24,4 +24,9 @@ class DefaultController extends AppController
     {
         $this->render('register');
     }
+
+    public function adminPanel()
+    {
+        $this->render('adminPanel');
+    }
 }

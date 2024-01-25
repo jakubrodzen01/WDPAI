@@ -53,6 +53,7 @@ class SecurityController extends AppController
         unset($_SESSION['selected_date']);
         unset($_SESSION['plan_name']);
         unset($_SESSION['exercises']);
+        unset($_SESSION['users']);
         session_destroy();
         return $this->render('login', ['messages' => ['Logout successful!']]);
     }
