@@ -53,7 +53,7 @@ Provides a web-based interface for PostgreSQL administration.
 
 #### Login Process:
 
-![](https://github.com/jakubrodzen01/WDPAI/screenshot.png)
+![](https://github.com/jakubrodzen01/WDPAI/screenshots/login.png)
 
 1. **User Authentication Input:**
    - Users provide their email and password for authentication through a login form.
