@@ -31,6 +31,7 @@ Provides a web-based interface for PostgreSQL administration.
 ### Login and Registration Views:
 
 #### Registration Process:
+![](./screenshots/register.png)
 
 1. **User Data Input:**
    - Users provide their registration data using a registration form, including email address, password, name, surname, gender, and any other required fields.
